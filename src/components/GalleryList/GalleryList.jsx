@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import {useState} from 'react';
 
-function GalleryList(){
+function GalleryList(  ){
     return(
         <div>
             <h2>GalleryList</h2>
+            {/* <p>Props: { props }</p> */}
         </div>
     );
 }

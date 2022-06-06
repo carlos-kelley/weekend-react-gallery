@@ -3,6 +3,7 @@ import './App.css';
 //import our component
 import GalleryList from '../GalleryList/GalleryList';
 import GalleryItem from '../GalleryItem/GalleryItem';
+import Body from '../Body/Body';
 
 
 function App() {
@@ -11,13 +12,10 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <div className="body">
-        <p>
-          Gallery goes here
-          </p>
-        </div>
+        
+        <Body />
         <GalleryList />
-        <GalleryItem />
+        <GalleryItem likes='1'/>
         <img src="images/goat_small.jpg"/>
       </div>
     );
