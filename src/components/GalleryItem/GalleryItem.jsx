@@ -9,12 +9,10 @@ function GalleryItem( props ){
     return(
         <div>
             <h2>GalleryItem</h2>
-            <ul>
-                { props.items.map( item => (<li>{ item.description }</li>) ) }
-            </ul>
-            <p><button onClick={handleClick}>Like</button>Likes: { likes }</p>
+            <h2>{ props.myItem.description }</h2>
             <p>Props: { JSON.stringify( props) }</p>
-            <p></p>
+
+            <p><button onClick={handleClick}>Like</button>Likes: { likes }</p>
         </div>
     );
 }

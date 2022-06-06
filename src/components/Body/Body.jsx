@@ -14,7 +14,7 @@ function Body(){
     return(
         <div className="body">
         <p>
-          {/* <GalleryList items = {itemsArray}/> */}
+          <GalleryList items = {itemsArray}/>
           </p>
         </div>
     );

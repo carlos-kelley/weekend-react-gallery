@@ -21,8 +21,6 @@ function App() {
         </header>
         
         <Body />
-        <GalleryList />
-        <GalleryItem items = {itemsArray}/>
         <img src="images/goat_small.jpg"/>
       </div>
     );
