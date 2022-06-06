@@ -4,11 +4,17 @@ import GalleryList from '../GalleryList/GalleryList';
 
 
 function Body(){
+
+    let itemsArray = [
+        {
+            description: 'My cats',
+            test: 'testy'
+        }
+    ]
     return(
         <div className="body">
         <p>
-          Gallery goes here
-          <GalleryList />
+          {/* <GalleryList items = {itemsArray}/> */}
           </p>
         </div>
     );

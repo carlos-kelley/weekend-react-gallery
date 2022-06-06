@@ -7,6 +7,13 @@ import Body from '../Body/Body';
 
 
 function App() {
+
+  let itemsArray = [
+    {
+        description: 'My cats',
+        test: 'testy'
+    }
+]
     return (
       <div className="App">
         <header className="App-header">
@@ -15,7 +22,7 @@ function App() {
         
         <Body />
         <GalleryList />
-        <GalleryItem likes='1'/>
+        <GalleryItem items = {itemsArray}/>
         <img src="images/goat_small.jpg"/>
       </div>
     );

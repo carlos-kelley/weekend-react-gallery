@@ -5,14 +5,15 @@ import GalleryItem from '../GalleryItem/GalleryItem';
 function GalleryList(  ){
 let itemsArray = [
     {
-        description: 'My cats'
+        description: 'My cats',
+        test: 'testy'
     }
 ]
 
     return(
         <div>
             <h2>GalleryList</h2>
-            <GalleryItem items = { itemsArray }/>
+            {/* <GalleryItem items = { itemsArray }/> */}
             {/* <p>Props: { props }</p> */}
         </div>
     );
