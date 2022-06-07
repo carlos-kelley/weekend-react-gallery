@@ -8,7 +8,7 @@ function Body( props ){
     // Make a GET call On page load
     useEffect( ()=>{
         getItems();
-    }, [] );  
+    }, [itemsArray] );  
 
     const getItems = () => {
         axios.get( '/gallery' ).then( (response )=>{
