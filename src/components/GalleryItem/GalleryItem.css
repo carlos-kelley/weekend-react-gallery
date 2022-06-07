@@ -16,3 +16,16 @@
 .blue{
     color: darkblue;
 } */
+
+img{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.outerColumn {
+    display: block;
+    position: relative;
+    width: 30%;
+    margin-left: 3%;
+    float: left;
+}

@@ -22,7 +22,7 @@ function GalleryItem( props ){
     
 
     return(
-        <div>
+        <div className = 'outerColumn'>
             <div  className = 'listItem'>
             {
                 show?
