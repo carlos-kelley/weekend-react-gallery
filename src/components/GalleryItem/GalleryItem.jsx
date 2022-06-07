@@ -1,18 +1,30 @@
 import React from 'react';
 import {useState} from 'react';
+import './GalleryItem.css'
 
 function GalleryItem( props ){
+    const [ show, setShow] = useState( true );
     const [ likes, setLikes ] = useState(0);
-    const handleClick = ()=>{
+
+    const handleClick = () =>{
+        setShow( !show );
+    }
+
+    const handleLike = ()=>{
         setLikes ( likes +1 );
     }
     return(
         <div>
-            <h2>GalleryItem</h2>
-            <h2>{ props.myItem.description }</h2>
+            <div  className = 'listItem'>
+                {
+                    show?
+                    <p onClick={handleClick} className = { props.myItem.color }><strong>{ props.myItem.description }</strong></p> 
+                    :
+                    <p onClick={handleClick}>{ props.myItem.color } </p>
+                }
+            </div>
             <p>Props: { JSON.stringify( props) }</p>
-
-            <p><button onClick={handleClick}>Like</button>Likes: { likes }</p>
+            <p><button onClick={handleLike}>Like</button>Likes: { likes }</p>
         </div>
     );
 }

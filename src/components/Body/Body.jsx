@@ -8,7 +8,13 @@ function Body(){
     let itemsArray = [
         {
             description: 'My cats',
-            test: 'testy'
+            test: 'testy',
+            color: ' red '
+        },
+        {
+            description: 'My dogs',
+            test: 'testy again',
+            color: ' blue '
         }
     ]
     return(

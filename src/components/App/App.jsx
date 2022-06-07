@@ -4,16 +4,11 @@ import './App.css';
 import GalleryList from '../GalleryList/GalleryList';
 import GalleryItem from '../GalleryItem/GalleryItem';
 import Body from '../Body/Body';
+import { createPortal } from 'react-dom/cjs/react-dom.development';
 
 
 function App() {
 
-  let itemsArray = [
-    {
-        description: 'My cats',
-        test: 'testy'
-    }
-]
     return (
       <div className="App">
         <header className="App-header">

@@ -28,7 +28,7 @@ Between the server and client, you'll need two terminal tabs! Because we're usin
 - Create a new **component** for the `GalleryList`CHECK 
 and pass it the gallery data stored in `App` via `props`.
     - Iterate (loop over) the list of gallery data
-    - Make GalleryItems
+    - Make GalleryItems CHECK
 - Create a new **component** called `GalleryItem.jsx`  CHECK 
 and pass it the individual gallery item via `props`. 
     - Update the `GalleryList` to use this component to display an image.
