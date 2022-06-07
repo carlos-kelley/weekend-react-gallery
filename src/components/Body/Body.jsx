@@ -1,24 +1,25 @@
 import React from 'react';
-import {useState} from 'react';
+import { useState, useEffect } from 'react';
 import GalleryList from '../GalleryList/GalleryList';
 
 
-function Body(){
+function Body( props ){
+    const [ itemsArray, setItemsArray ] = useState( [] );
+    // Make a GET call On page load
+    useEffect( ()=>{
+        getItems();
+    }, [] ); // empty array tells this to only run once
 
-    let itemsArray = [
-        {
-            description: 'My cats',
-            test: 'testy',
-            color: ' red '
-        },
-        {
-            description: 'My dogs',
-            test: 'testy again',
-            color: ' blue '
-        }
-    ]
+    const getItems=()=>{
+        setItemsArray( [ {
+            color:'red',
+            size: 'tiny',
+            description: 'drop of blood'
+        }]);
+    }
     return(
         <div className="body">
+        <p>{JSON.stringify (props) }</p>
         <p>
           <GalleryList items = {itemsArray}/>
           </p>
@@ -26,5 +27,5 @@ function Body(){
     );
 }
 
-export default Body;
 
+export default Body;
