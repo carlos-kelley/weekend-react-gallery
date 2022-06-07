@@ -1,8 +1,6 @@
 # Project Name
-
+Gallery of my Life
 
 ## Description
+Shows users 6 pictures that describe my life. User can click to get description of image using conditional rendering. Users can click like button and see like count dynamically update.
 
-Your project description goes here. What problem did you solve? How did you solve it?
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
