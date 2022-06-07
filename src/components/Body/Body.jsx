@@ -19,6 +19,8 @@ function Body( props ){
             alert( 'error getting gallery' );
         })
     }
+
+    
         
     
     return(

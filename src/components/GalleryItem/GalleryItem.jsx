@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import './GalleryItem.css'
+import axios from 'axios';
 
 function GalleryItem( props ){
     const [ show, setShow] = useState( true );
@@ -11,8 +12,15 @@ function GalleryItem( props ){
     }
 
     const handleLike = ()=>{
-        setLikes ( likes +1 );
+        axios.put( `/gallery/like/${props.myItem.id}` ).then( ( response )=>{
+            console.log( response.data );
+        }).catch ( ( err )=>{
+            console.log(err );
+            alert( 'error adding like' );
+        })
     }
+    
+
     return(
         <div>
             <div  className = 'listItem'>
@@ -23,9 +31,11 @@ function GalleryItem( props ){
                 <p onClick={ handleClick }>{props.myItem.description}</p>
             }
             </div>
-            <p><button onClick={handleLike}>Like</button>Likes: { likes }</p>
+            <button onClick={ handleLike }>Like</button>
+            <p>Likes: { props.myItem.likes }</p>
         </div>
     );
 }
+
 
 export default GalleryItem;
