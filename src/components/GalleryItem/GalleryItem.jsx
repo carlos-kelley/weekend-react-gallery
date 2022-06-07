@@ -16,14 +16,13 @@ function GalleryItem( props ){
     return(
         <div>
             <div  className = 'listItem'>
-                {
-                    show?
-                    <p onClick={handleClick} className = { props.myItem.color }><strong>{ props.myItem.description }</strong></p> 
-                    :
-                    <p onClick={handleClick}>{ props.myItem.color } </p>
-                }
+            {
+                show?
+                <img onClick={ handleClick } src={props.myItem.path}/>
+                :
+                <p onClick={ handleClick }>{props.myItem.description}</p>
+            }
             </div>
-            <p>Props: { JSON.stringify( props) }</p>
             <p><button onClick={handleLike}>Like</button>Likes: { likes }</p>
         </div>
     );

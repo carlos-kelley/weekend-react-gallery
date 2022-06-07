@@ -1,10 +1,7 @@
 import React from 'react';
 import './App.css';
 //import our component
-import GalleryList from '../GalleryList/GalleryList';
-import GalleryItem from '../GalleryItem/GalleryItem';
 import Body from '../Body/Body';
-import { createPortal } from 'react-dom/cjs/react-dom.development';
 
 
 function App() {
@@ -16,7 +13,6 @@ function App() {
         </header>
         
         <Body />
-        <img src="images/goat_small.jpg"/>
       </div>
     );
 }

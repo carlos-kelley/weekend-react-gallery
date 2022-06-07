@@ -8,9 +8,6 @@ const [ hook, setHook ] = useState( null )
 
     return(
         <div>
-            <h2>GalleryList</h2>
-            <p>Props: { JSON.stringify( props) }</p>
-
             <ul>
             {
                 props.items.map( item =>(
